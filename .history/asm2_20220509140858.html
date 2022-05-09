@@ -1,0 +1,56 @@
+git add<!DOCTYPE html>
+<html>
+<head>
+  <title>Bài tập về nhà</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="css.css">
+  
+  
+  <script src="asm2js.js"></script>
+</head>
+<body>
+  <h2>Class Marksheet</h2>
+  <div>
+   
+    <div>
+      <label for="ten" class="title">Tên</label>
+      <input type="text" name="" id="ten" class="info-input">
+    </div>
+    <div>
+      <label for="d-toan" class="title">Điểm toán</label>
+      <input type="number" name="" id="toan" class="info-input">
+    </div>
+    <div>
+      <label for="d-ly" class="title">Điểm Lý</label>
+      <input type="number" name="" id="ly" class="info-input">
+    </div>
+    <div>
+      <label for="d-hoa" class="title">Điểm Hóa</label>
+      <input type="number" name="" id="hoa" class="info-input">
+    </div>
+    
+  </div>
+  <div>
+    <button type="button" onclick="viewdata()" class="bt-function">Thêm</button>
+    <button type="button" onclick="dtb()" class="bt-function">Tính điểm trung bình</button>
+    <button type="button" onclick="xepLoai()" class="bt-function">Học sinh giỏi</button>
+  </div>
+  <div>
+    <h4>Danh Sách Sinh Viên</h4>
+    <table>
+      <thead>
+        <tr>
+          <th id="stt">STT</th>
+          <th>Tên</th>
+          <th>Điểm Toán</th>
+          <th>Điểm Lý</th>
+          <th>Điểm Hóa</th>
+          <th id="dtb">Trung Bình</th>
+        </tr>
+      </thead>
+      <tbody id="dssv">
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
